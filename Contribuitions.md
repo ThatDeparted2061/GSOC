@@ -1,22 +1,25 @@
 ## Github Contributions
 | Open PRs | Collaborations | Merged PRs | Documentation |
 |----------|----------------|------------|---------------|
-|[refactor: config/locales/views/circuitverse/en.yml](https://github.com/CircuitVerse/CircuitVerse/pull/5448)|||[docs: Wsl setup](https://github.com/CircuitVerse/CircuitVerse/pull/5333)|
-|[chore: Add alert for incorrect boolean expression in combinational analysis](https://github.com/CircuitVerse/CircuitVerse/pull/5475)||||
-|[Fix: Update ContextMenu.vue](https://github.com/CircuitVerse/cv-frontend-vue/pull/543)||||
-|[refactor: TS integration Minimap.js](https://github.com/CircuitVerse/cv-frontend-vue/pull/474)||||
-|[refactor: TS integration in modules.js](https://github.com/CircuitVerse/cv-frontend-vue/pull/472)||||
-|[refactor: ts integration in restrictedElementDiv](https://github.com/CircuitVerse/cv-frontend-vue/pull/471)||||
-|[refactor : TS integration : src/simulator/src/hotkey_binder/model/normalize/normalizer.plugin.ts](https://github.com/CircuitVerse/cv-frontend-vue/pull/458)||||
-|[refactor: TS integration, jquery Dom removal: src/simulator/src/hotkey_binder/keyBinder.vue](https://github.com/CircuitVerse/cv-frontend-vue/pull/457)||||
-|[refactor Js integration and file restructure: src/simulator/src/Verilog2CV.ts](https://github.com/CircuitVerse/cv-frontend-vue/pull/449)||||
-|||||
-|||||
-|||||
-|||||
-|||||
-|||||
-|||||
-|||||
-|||||
-|||||
+|[refactor: config/locales/views/circuitverse/en.yml](https://github.com/CircuitVerse/CircuitVerse/pull/5448)|[Bootstrap5](https://github.com/CircuitVerse/CircuitVerse/pull/5595)|[Fix: Change imports from partial v0/src and src to to complete v0/src](https://github.com/CircuitVerse/cv-frontend-vue/pull/523)|[docs: Wsl setup](https://github.com/CircuitVerse/CircuitVerse/pull/5333)|
+|[chore: Add alert for incorrect boolean expression in combinational analysis](https://github.com/CircuitVerse/CircuitVerse/pull/5475)|[Responsive](https://github.com/CircuitVerse/CircuitVerse/pull/5584)|[refactor : ts integration : src/simulator/src/themer/themes.ts](https://github.com/CircuitVerse/cv-frontend-vue/pull/464)|[Fix : Update 3lmsintegration.md](https://github.com/CircuitVerse/CircuitVerseDocs/pull/406)|
+|[Fix: Update ContextMenu.vue](https://github.com/CircuitVerse/cv-frontend-vue/pull/543)|[Search UI](https://github.com/CircuitVerse/CircuitVerse/pull/5563)|[refactor : Ts integration : src/simulator/src/themer/themer.ts](https://github.com/CircuitVerse/cv-frontend-vue/pull/463)||
+|[refactor: TS integration Minimap.js](https://github.com/CircuitVerse/cv-frontend-vue/pull/474)|[Featured examples](https://github.com/CircuitVerse/CircuitVerse/pull/5508)|[refactor : Ts intergration : src/simulator/src/themer/themeCardSvg.ts](https://github.com/CircuitVerse/cv-frontend-vue/pull/462)||
+|[refactor: TS integration in modules.js](https://github.com/CircuitVerse/cv-frontend-vue/pull/472)|[Circuitcard](https://github.com/CircuitVerse/CircuitVerse/pull/5506)|[refactor: vue ts and vue's reactive : src/simulator/src/themer/customThemer.vue](https://github.com/CircuitVerse/cv-frontend-vue/pull/461)||
+|[refactor: ts integration in restrictedElementDiv](https://github.com/CircuitVerse/cv-frontend-vue/pull/471)|[Feature card](https://github.com/CircuitVerse/CircuitVerse/pull/5505)|[refactor : typescript integration in src/simulator/src/app.ts](https://github.com/CircuitVerse/cv-frontend-vue/pull/459)||
+|[refactor : TS integration : src/simulator/src/hotkey_binder/model/normalize/normalizer.plugin.ts](https://github.com/CircuitVerse/cv-frontend-vue/pull/458)|[Home component](https://github.com/CircuitVerse/CircuitVerse/pull/5504)|[refactor: JS to TS : src/simulator/src/hotkey_binder/model/utils.js](https://github.com/CircuitVerse/cv-frontend-vue/pull/456)||
+|[refactor: TS integration, jquery Dom removal: src/simulator/src/hotkey_binder/keyBinder.vue](https://github.com/CircuitVerse/cv-frontend-vue/pull/457)|[refactor: remove deprecated src directory and sync with v0/src and v1/src](https://github.com/CircuitVerse/cv-frontend-vue/pull/495)|[refactor: typescript integration : src/simulator/src/wire.ts](https://github.com/CircuitVerse/cv-frontend-vue/pull/442)||
+|[refactor Js integration and file restructure: src/simulator/src/Verilog2CV.ts](https://github.com/CircuitVerse/cv-frontend-vue/pull/449)||[refactor : typescript integration src/simulator/src/contention.ts](https://github.com/CircuitVerse/cv-frontend-vue/pull/434)||
+|[refactor: ts and DOM integration : src/simulator/vendor/table2csv.ts](https://github.com/CircuitVerse/cv-frontend-vue/pull/446)||[refactor : Js to Ts : src/simulator/src/hotkey_binder/defaultKeys.ts](https://github.com/CircuitVerse/cv-frontend-vue/pull/430)||
+|[refactor: ts integration: src/simulator/src/tutorials.ts](https://github.com/CircuitVerse/cv-frontend-vue/pull/445)||[JS to TS: src/simulator/src/hotkey_binder/model/shortcuts.plugin.ts](https://github.com/CircuitVerse/cv-frontend-vue/pull/425)||
+|[refactor : ts integration : src/simulator/src/sequential.ts](https://github.com/CircuitVerse/cv-frontend-vue/pull/444)||[JS to TS simulator/src/hotkey_binder/model/actions.ts](https://github.com/CircuitVerse/cv-frontend-vue/pull/423)||
+|[refactor : For ts integration : src/simulator/src/verilogHelpers.ts](https://github.com/CircuitVerse/cv-frontend-vue/pull/443)||[JS to TS : simulator/src/data/undo.ts](https://github.com/CircuitVerse/cv-frontend-vue/pull/421)||
+|[refactor : jq removal : src/components/DialogBox/Themes/ApplyThemes.vue](https://github.com/CircuitVerse/cv-frontend-vue/pull/441)||[Js to TS : simulator/src/data/redo.ts](https://github.com/CircuitVerse/cv-frontend-vue/pull/418)||
+|[Say Goodbye to Rails 7.0, Hello 7.2!](https://github.com/CircuitVerse/CircuitVerse/pull/5248)||||
+|[reafctor : remove jquery : src/components/DialogBox/CombinationalAnalysis.vue](https://github.com/CircuitVerse/cv-frontend-vue/pull/440)||||
+|[refactor : ts integration : src/simulator/src/moduleSetup.ts](https://github.com/CircuitVerse/cv-frontend-vue/pull/436)||||
+|[refactor : typescript integration : src/simulator/src/data.ts](https://github.com/CircuitVerse/cv-frontend-vue/pull/435)||||
+|[refactor: Js to Ts : src/simulator/src/hotkey_binder/view/panel.ui.js](https://github.com/CircuitVerse/cv-frontend-vue/pull/429)||||
+|[JS to TS : src/simulator/src/hotkey_binder/model/addShortcut.ts](https://github.com/CircuitVerse/cv-frontend-vue/pull/424)||||
+|[JS to Ts : simulator/src/data/saveImage.ts](https://github.com/CircuitVerse/cv-frontend-vue/pull/419)||||
+|[Bump-Bootstrap 4.6.2 - 5.3.3](https://github.com/CircuitVerse/cv-frontend-vue/pull/409)||||
