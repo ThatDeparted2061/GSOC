@@ -1,1 +1,1 @@
-## Steps for Replacing the legacy simulator withe the Vue-simulator
+## Steps for Replacing the legacy simulator with the Vue-simulator
