@@ -1,5 +1,14 @@
 ## How are we going about integrating the Vue simulator while implementing the version control along the way?
-So while loading the simulator when we click on simulator while being on the homepage, we are redirected to `/simulator`. and it is further transferred to `/simulatorvue` if the flipper flage is enabled. At the crux of the version implementation (if I bypass the flipper flag toggling and introduce the simulator vue as default). The steps are 
+So while loading the simulator when we click on simulator while being on the homepage, we are redirected to `/simulator`. and it is further transferred to `/simulatorvue` if the flipper flage is enabled. To make the switch to the vuesimulator automatic, we gotta remove the conditional rendering of the vuesimulator when flipper enables it 
+<br><br>
+![Screenshot from 2025-04-12 19-05-30](https://github.com/user-attachments/assets/e024ba1f-e1e7-4a24-b3e7-9e9fc0514dd6)
+<br><br>
+Now we look at the new paths defined in routed.rb fot vuesimulator
+<br><br>
+![Screenshot from 2025-04-12 19-37-29](https://github.com/user-attachments/assets/3fac2b76-7ba3-4c96-832f-e3488c456ac4)
+<br><br>
+
+**At the crux** of the integration (if I bypass the flipper flag toggling and introduce the simulator vue as default). lets look at the steps for loading the vuesimulator - 
 - We load the simulator to the URL
 - then we check for the presaved data using the `load(data)` and the functions are loaded further on
 - The next thing is managing the further routes of the application, which go beyond `/simulatorvue,` which were conventionally saved here
@@ -10,6 +19,10 @@ So while loading the simulator when we click on simulator while being on the hom
   <br><br>
   ![image](https://github.com/user-attachments/assets/7b0efa1d-3bde-42df-a11e-43ea7fd4f24c)
   <br><br>
+  - We are gonna have to change the link references at many other places too like these
+    <br><br>
+  ![image](https://github.com/user-attachments/assets/6b2e6dd1-81b8-4b8b-983b-a4c631fd2a60)
+<br><br>
 ## How are we implementing the verion control in this? 
 So, every time we load the URL, we introduce a parameter to look into the version of the simulator. We do this in several ways
 - To transfer the routes after `/simulator/` we render the paths in static_controller.rb with a version parameter `simver` here.
@@ -25,4 +38,4 @@ and we call this in `routes.rb` as
 ![Screenshot from 2025-04-12 13-26-40](https://github.com/user-attachments/assets/92acfee9-a53c-40ea-936f-dc1d8a10e871)
 <br><br>
 ## Aftermath
-- After this, we still would require a lot of work. We have merely diverted the URLs and HTTP requests to the Vue simulator we'd require to change the innate calls from the erb files in `app/views` to call simulator vue. Removing the excess controllers and erb files like say, testbench since they are being handled in vue simulator. We'd require excessive file system cleanups and chaning more minute APIs towards vussim, while doing this we'd also have to update the URL for vue simulator thought vite files after syncing `src` with `v0/src` and `v1/src`
+- After this, we still would require a lot of work. We have merely diverted the URLs and HTTP requests to the Vue simulator, we'd require to change the innate calls from the erb files in `app/views` to call simulator vue. Removing the excess controllers and erb files, like say testbench since they are being handled in vue simulator. We'd require excessive file system cleanups and chaning more minute APIs towards vussim, while doing this we'd also have to update the URL for vue simulator thought vite files after syncing `src` with `v0/src` and `v1/src`
