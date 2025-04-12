@@ -16,10 +16,10 @@ Now we look at the new paths defined in routed.rb fot vuesimulator
 ![Screenshot from 2025-04-11 23-05-31](https://github.com/user-attachments/assets/e5449592-84e7-4f10-9627-7635d1ef0cd7)
 <br><br>
 - Since we won't be needing this (as we have components in vue defining this using vue-router), we transfer these routes to `simulatorvue/*path`
-  <br><br>
-  ![image](https://github.com/user-attachments/assets/7b0efa1d-3bde-42df-a11e-43ea7fd4f24c)
-  <br><br>
-  - We are gonna have to change the link references at many other places too like these
+<br><br>
+![image](https://github.com/user-attachments/assets/7b0efa1d-3bde-42df-a11e-43ea7fd4f24c)
+<br><br>
+- We are gonna have to change the link references at many other places too like these
     <br><br>
   ![image](https://github.com/user-attachments/assets/6b2e6dd1-81b8-4b8b-983b-a4c631fd2a60)
 <br><br>
