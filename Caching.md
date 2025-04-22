@@ -127,9 +127,9 @@ async function autoLogin() {{
   // const token = await getSecure("token");
 
   if (email && token) {{
-    router.push("/dashboard");
+    // Send the token to Authstore using the settoken(token) function of authstore
   }} else {{
-    router.push("/login");
+    // otherwise everything happens normally
   }}
 }}
 ```
