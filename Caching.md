@@ -133,7 +133,7 @@ async function autoLogin() {{
   }}
 }}
 ```
-🌐 5. Perform Authenticated API Actions
+## 🌐 5. Perform Authenticated API Actions - (Future implication for saving circuits and getting dashbord on local system)
 Use Axios for subsequent API requests:
 
 ```js
