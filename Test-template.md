@@ -1,3 +1,4 @@
+## Raw Testing file Template
 ```ts
 // 1. ✅ Imports
 import { describe, it, expect, beforeAll, beforeEach, afterAll, afterEach } from 'vitest';
@@ -32,3 +33,35 @@ describe('myFunction()', () => {
     expect(result).toBe('FallbackValue');
   });
 });
+```
+
+## Raw Testing file Format with Tauri Mocking
+```ts
+import { describe, test, expect, beforeAll, beforeEach } from 'vitest'
+import { mockIPC } from '@tauri-apps/api/mocks'
+import { invoke } from '@tauri-apps/api/core'
+import { randomFillSync } from 'crypto'
+
+beforeAll(() => {
+  Object.defineProperty(window, 'crypto', {
+    value: {
+      getRandomValues: (buffer: ArrayBuffer) => randomFillSync(buffer),
+    },
+  });
+});
+
+beforeEach(() => {
+  mockIPC.clear();
+});
+
+test('invoke mocked command', async () => {
+  mockIPC((cmd, args) => {
+    if (cmd === 'greet') {
+      return `Hello, ${args.name}`
+    }
+  });
+
+  const result = await invoke('greet', { name: 'Harsh' });
+  expect(result).toBe('Hello, Harsh');
+});
+```
