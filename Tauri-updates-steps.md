@@ -54,8 +54,8 @@ On **Windows**, optionally configure `installMode`:
 Set the private key environment variable (required for signing updates):
 
 ```sh
-export TAURI_SIGNING_PRIVATE_KEY="Path or content of your private key"
-export TAURI_SIGNING_PRIVATE_KEY_PASSWORD=""
+export TAURI_SIGNING_PRIVATE_KEY=" Path or content of our private key "
+export TAURI_SIGNING_PRIVATE_KEY_PASSWORD=" likewise "
 ```
 
 Run Tauri build:
