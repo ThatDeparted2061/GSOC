@@ -131,11 +131,11 @@ Check if the user postponed the update and re-prompt on the next session start:
 
 ```js
 async function handlePostponedUpdate() {
-    if (localStorage.getItem("postponeUpdate") === "true") {
+    if (localStorage.getItem("postponeUpdate") === "true") {        // Storage plugin usage again
         const userChoice = confirm("You postponed the last update. Would you like to update now?");
         if (userChoice) {
             await checkForUpdates();
-            localStorage.removeItem("postponeUpdate");
+            localStorage.removeItem("postponeUpdate");    // Storage plugin usage again
         }
     }
 }
