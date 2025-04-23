@@ -1,4 +1,4 @@
-# **Procedure for Implementing Updater in Tauri App**
+# **Procedure for Implementing Updater in Tauri App and Signing of releases**
 
 ## **1. Installing the Updater Plugin**  
 Use the package manager to install the Tauri updater plugin:
