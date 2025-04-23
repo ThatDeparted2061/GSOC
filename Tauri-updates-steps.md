@@ -116,7 +116,7 @@ async function checkForUpdates() {
                 alert("Update installed! Restarting the app...");
                 await relaunch();
             } else {
-                localStorage.setItem("postponeUpdate", "true");
+                localStorage.setItem("postponeUpdate", "true"); //This is not gonna work for Tauri here, we can either declare a new variable in some store and store the information there, or we should use the Tauri-storage plugin (PREFERRED)
             }
         }
     } catch (error) {
